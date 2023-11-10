@@ -1,0 +1,625 @@
+@import "two_screen.css";
+@import "three_screen.css";
+@import "fourth_screen.css";
+@import "five_screen.css";
+@import "footer.css";
+@import "profil.css";
+@import "sales leaders.css";
+@import "about.css";
+@import "core.css";
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../css/fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Train One';
+    src: url('../css/fonts/Train One/TrainOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Russo One';
+    src: url('../css/fonts/Russo One/RussoOne-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #141111;
+}
+
+/*===================== scrollbar =======================*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: #141111;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 112, 112);
+    border-radius: 20px;
+}
+
+
+/*=========================*/
+
+.content{
+    width: 100%;
+    background: #141111;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.first_screen{
+    background: url("../css/images/first_screen_fon.png") no-repeat;
+    /*
+    background-size: 100% auto;
+    */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 949px;
+}
+
+.grad_black{
+    margin-top: 586px;
+    background: linear-gradient(180deg, #141111 11.46%, rgba(0, 0, 0, 0) 82.29%);
+    transform: rotate(-180deg);
+    width: 100%;
+    min-height: 363px;
+    position: relative;
+}
+
+
+
+/*============ HEADER ==========*/
+
+.header{
+    padding-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+
+.search{
+    width: 40%;
+    margin-right: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#search{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 239, 239, 0.4);
+    font-size: 25px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+#submit{
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    left: -50px;
+    background: url("../css/images/search.png") no-repeat 50% 50%;
+    cursor: pointer;
+}
+
+.button_catalog{
+    width: 135px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.button_login{
+    width: 90px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 800;
+}
+
+
+.icon_profile{
+    display: none;
+    cursor: pointer;
+}
+
+.header .favorites{
+    cursor: pointer;
+    display: none;
+}
+
+.header .basket{
+    display: none;
+}
+
+
+/*============ BOX-SLIDER ==========*/
+
+.box{
+    cursor: pointer;
+}
+
+.box-slider{
+    width: 900px;
+    height: 380px;
+    position: absolute;
+/*    top: 500px;
+    left: 900px;*/
+    margin-left: 842px;
+    margin-top: 480px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mini_text{
+    position: relative;
+    width: 116px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+    top: 52px;
+    left: -41px;
+    margin-right: -80px;
+}
+
+
+.container_box{
+    width: 85%;
+    display: none;
+    justify-content: space-between;
+}
+
+
+
+
+.box_slider{
+    border: 2px solid #FBBB43;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 215px;
+    height: 377px;
+    background: rgba(0, 0, 0, 0.65);
+    transform: translateY(-80%);
+    transition: 1s;
+    /*
+    animation: anim 1.5s forwards;
+    */
+    cursor: pointer;
+}
+
+.box_hover{
+    border: 2px solid #FBBB43;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 215px;
+    height: 377px;
+    background: yellow;
+    transform: translateY(-80%);
+    transition: 1s;
+}
+
+
+@keyframes anim_up {
+    0% {transform: translateY(-80%); opacity: 0}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes anim_down {
+    0% {transform: translateY(80%); opacity: 0}
+    100% {transform: translateY(0);opacity: 1;}
+}
+
+
+
+.line_box{
+    width: 100%;
+    height: 15px;
+    border-bottom: 2px solid #FBBB43;
+    border-radius: 50px;
+    margin-top: -19.5px;
+}
+.name_games{
+    width: 158px;
+    height: 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.sale{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discounts{
+    background: #FBBB43;
+    border-radius: 5px;
+    color: #141111;
+    width: 45px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discounts_price{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.box p{
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+
+.buy_box_black{
+    opacity: 0;
+    height: 100%;
+    transition: opacity .3s;
+    background: #000000;
+    position: relative;
+    width: 100%; left: 0; top: -385px; z-index: 1;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+.box_slider:hover .buy_box_black{
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+
+
+.buy_box_button{
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 150px;
+    background: #FBBB43;
+    left: 60px;
+    color:#000000;
+    transition: opacity 0.5s;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.buy_box_button:hover{
+    transition: 1s;
+    background: #FFFFFF;
+}
+
+.box_slider:hover .buy_box_button {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+
+
+.button_favorites{
+    background: url("../css/images/favorites_mini_close.png");
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    top: 10px;
+    left: 175px;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+.button_favorites:hover{
+    background: url("images/favorites_yellow.png");
+}
+
+.box_slider:hover .button_favorites{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+
+
+
+.arrows{
+    margin-left: 55px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.up, .down{
+    cursor: pointer;
+}
+
+.liner{
+    margin: 5px 0 6px 0;
+    width: 5px;
+    border-left: 1px solid #777777;
+    height: 220px;
+}
+.liner_mini{
+    border-left: 1px solid #ffffff;
+    height: 74px;
+    margin-left: -1px;
+    transition: 1s;
+}
+
+
+/*=================== Catalog ===================*/
+
+
+.catalog{
+    margin-top: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    height: 100%;
+    right: -150px;
+    display: none;
+    z-index: 10;
+}
+.catalog li{
+    margin-top: 200px;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+.catalog a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.catalog .catalog_one ul a{
+    color: #FBBB43;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.catalog .catalog_gray{
+    color: #979797;
+}
+
+.catalog {.catalog_two, .catalog_three, .catalog_four} ul a{
+    color: #FFFFFF;
+}
+
+
+
+
+/*====================== login =======================*/
+
+
+
+.login{
+    margin-top: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 35%;
+    height: 100%;
+    right: -150px;
+    display: none;
+    z-index: 10;
+}
+
+
+.login_register{
+    margin-top: 150px;
+    width: 85%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.login_and_register{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    width: 100%;
+}
+
+
+
+.login_and_register .Open{
+    border: 1px solid rgba(255,255,255, 0.8);
+    border-bottom: 2px solid #000;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: -1px;
+    color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+
+}
+
+
+.login_and_register .Close{
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #FFFFFF;
+}
+
+
+.login_and_register p:hover{
+    cursor: pointer;
+}
+
+
+.input_box_login{
+    margin-top: 100px;
+    display: none;
+    flex-flow: column;
+    width: 300px;
+    align-items: center;
+}
+
+#email, #password{
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 56px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.LOG_IN{
+    width: 200px;
+    height: 40px;
+    background: #FBBB43;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+}
+.LOG_IN a{
+    text-decoration: none;
+}
+
+#Forgot_your_password{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#Reestablish{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FBBB43;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+
+
+
+
+.input_box_register{
+    margin-top: 100px;
+    display: none;
+    flex-flow: column;
+    width: 300px;
+    align-items: center;
+}
+
+#email_reg, #password_reg, #name_surname_reg, #passport_data_reg{
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 56px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+
+button:disabled{
+    background: #8E8E8E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

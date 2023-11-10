@@ -1,0 +1,47 @@
+.about{
+    width: 1166px;
+    min-height: 600px;
+    background: url("../css/images/about_img.png") no-repeat center center;
+    display: flex;
+    justify-content: center;
+}
+.about_header{
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 200px;
+
+}
+.about_border_bottom{
+    margin-top: 10px;
+    border-bottom: 2px solid #FBBB43;
+    width: 90px;
+}
+.about_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 957px;
+    height: 225px;
+    margin-top: 78px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #FBBB43;
+    border-radius: 10px;
+}
+.about_info p{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+
+}

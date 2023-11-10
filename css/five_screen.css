@@ -1,0 +1,244 @@
+
+
+
+.five_screen{
+    width: 1308px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 150px;
+}
+.header_five_screen{
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+.border_bottom{
+    margin-top: 10px;
+    border-bottom: 2px solid #FBBB43;
+    width: 159px;
+}
+
+
+.container_box_big{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.box_slider_img{
+    margin: 10px 10px 10px 10px;
+    max-height: 400px;
+    border: 2px solid #FBBB43;
+    border-radius: 6px;
+}
+
+.big_box_name_card_sale{
+    position: relative;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+
+.big_card_sale{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.big_name_card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+
+.black_op_big{
+    opacity: 0;
+    height: 401px;
+    transition: opacity .3s;
+    background: #000000;
+    position: relative;
+    width: 570px; left: 0; top: -408px; z-index: 1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.box_slider_img:hover .black_op_big{
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+
+.buy_box_button_big{
+    opacity: 0;
+    position: relative;
+    top: -650px;
+    left: 230px;
+    width: 100px;
+    height: 40px;
+    background: #FBBB43;
+    color:#000000;
+    transition: opacity .3s;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.buy_box_button_big:hover{
+    background: #FFFFFF;
+}
+
+.box_slider_img:hover .buy_box_button_big{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+.button_favorites_big{
+    background-image: url("../css/images/favorites_mini_close.png");
+    opacity: 0;
+    position: relative;
+    width: 24px;
+    height: 21px;
+    top: -780px;
+    left: 530px;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+.button_favorites_big:hover{
+    background-image: url("../css/images/favorites_yellow.png");
+}
+
+.box_slider_img:hover .button_favorites_big{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+.box_slider_img_mini{
+    margin: 10px 10px 10px 10px;
+    max-height: 218px;
+    border: 2px solid #FBBB43;
+    border-radius: 6px;
+}
+
+.big_box_name_card_sale_mini{
+    position: relative;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+
+
+
+
+.black_op_big_mini{
+    opacity: 0;
+    height: 218px;
+    transition: opacity .3s;
+    background: #000000;
+    position: relative;
+    width: 570px; left: 0; top: -223px; z-index: 1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.box_slider_img_mini:hover .black_op_big_mini{
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+
+.buy_box_button_big_mini{
+    opacity: 0;
+    position: relative;
+    top: -380px;
+    left: 230px;
+    width: 100px;
+    height: 40px;
+    background: #FBBB43;
+    color:#000000;
+    transition: opacity .3s;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.buy_box_button_big_mini:hover{
+    background: #FFFFFF;
+}
+
+.box_slider_img_mini:hover .buy_box_button_big_mini{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+.button_favorites_big_mini{
+    background-image: url("../css/images/favorites_mini_close.png");
+    opacity: 0;
+    position: relative;
+    width: 24px;
+    height: 21px;
+    top: -420px;
+    left: 530px;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+.button_favorites_big_mini:hover{
+    background-image: url("../css/images/favorites_yellow.png");
+}
+
+.box_slider_img_mini:hover .button_favorites_big_mini{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+.box_slider_img, .box_slider_img_mini{
+    cursor: pointer;
+}
+
+
+
+.content_box_big{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liner_mini_big{
+    border-left: 1px solid #ffffff;
+    height: 74px;
+    margin-left: -1px;
+    transition: 1s;
+}
+
+.up_big, .down_big{
+    cursor: pointer;
+}

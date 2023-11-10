@@ -1,0 +1,259 @@
+
+
+
+.core_content{
+    width: 1308px;
+    margin-bottom: 50px;
+}
+
+.header_core{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+.name_header{
+    margin-right: 20px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.quantity_header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FBBB43;
+}
+
+
+.core_left_and_right{
+    width: 100%;
+    display: flex;
+}
+
+
+
+.core_left{
+    width: 45%;
+}
+
+.box_product{
+    margin-top: 60px;
+    border-top: 1px solid white;
+    padding-top: 22px;
+}
+.box_product img{
+    width: 126px;
+    height: 156px;
+}
+.box_product .delete{
+    width: 18px;
+    height: 18px;
+}
+.box_product .box_product_name{
+    width: 346px;
+}
+
+.box_product_right{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 5px 0 5px 25px;
+}
+
+.box_product{
+    display: flex;
+}
+.box_product_price{
+    display: flex;
+}
+.box_product_name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.box_product_price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.sale_product{
+    margin-left: 25px;
+    min-width: 45px;
+    height: 30px;
+    background: #FBBB43;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    padding: 5px 5px 5px 5px;
+}
+.delete{
+    position: relative;
+    top: -8px;
+    left: 72px;
+    cursor: pointer;
+}
+
+.core_right{
+    width: 55%;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+
+
+.box_payment{
+    width: 540px;
+    height: 280px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 30px 30px 30px 30px;
+}
+.text_and_price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.payment_text{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.payment_price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FBBB43;
+}
+
+
+
+.consent{
+    border-top: 1px solid white;
+    padding-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.toggle{
+    height: 16px;
+    width: 40px;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0.5;
+    margin-right:20px;
+}
+
+.toggle.active{
+    opacity: 1;
+}
+
+.toggle >.slider{
+    background: #FBBB43;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: 0.4s;
+}
+.toggle > input{
+    display: none;
+}
+
+
+
+
+.payment_method_and_payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.payment_method{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+}
+.box_payment_method_right_left{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.up_text_pm{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.payment_button{
+    border: none;
+    background: #FBBB43;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.payment_button:hover{
+    background: #FFFFFF;
+    transition: 0.4s;
+}

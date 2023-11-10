@@ -1,0 +1,164 @@
+
+
+
+
+
+
+.fourth_screen{
+    margin-top: 120px;
+    max-width: 1308px;
+    min-height: 1000px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+
+.header_fourth_screen{
+    color: #FFFFFF;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 68px;
+}
+/*.header_button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}*/
+.on, .off{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.header_fourth_screen .on{
+    border: 1px solid #FBBB43;
+    background: rgba(251, 187, 67, 0.3);
+    padding: 10px 10px 10px 10px;
+    margin-bottom: -1px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+
+.header_fourth_screen .off{
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+}
+
+.fourth_screen .box{
+    animation: none;
+    transform: translateY(0);
+}
+
+
+
+
+.box{
+    border: 2px solid #FBBB43;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 215px;
+    height: 377px;
+    background: rgba(0, 0, 0, 0.65);
+    transition: 1s;
+}
+.box p{
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.box:hover .buy_box_black{
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+.box:hover .buy_box_button {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.box:hover .button_favorites{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+
+
+
+
+
+.screen_on{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.screen_on .box{
+     margin: 25px 25px 25px 25px;
+ }
+
+.screen_off{
+    display: none;
+}
+
+
+.screen_on_hidden{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.screen_on_hidden .box{
+    margin: 25px 25px 25px 25px;
+}
+.screen_off_hidden{
+    display: none;
+}
+
+
+.bottom_screen_button{
+    margin-top: 60px;
+}
+.bs_button{
+    width: 120px;
+    height: 40px;
+    background: #FBBB43;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 300px;
+}
+

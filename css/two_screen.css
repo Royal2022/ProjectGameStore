@@ -1,0 +1,45 @@
+
+
+.two_screen{
+    margin-top: 196px;
+    width: 1308px;
+    height: 200px;
+}
+
+
+.notepad_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notepad{
+    width: 230px;
+    height: 150px;
+    border: 1px solid #FBBB43;
+    border-radius: 8px;
+}
+
+.notepad img{
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 50px;
+}
+
+.text_notepad{
+    color: #FBBB43;
+    font-family: 'Train One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 66px;
+}
+.text_notepad p {
+    margin: 10px 0 10px 0;
+}

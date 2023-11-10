@@ -1,0 +1,24 @@
+.catalog_header{
+    width: 1166px;
+    justify-content: left;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    color: #FFFFFF;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+.catalog_container{
+    width: 1166px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 100px;
+}
+.catalog_container .box{
+    margin: 35px 38px 35px 38px;
+    position: relative;
+}

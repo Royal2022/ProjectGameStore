@@ -1,0 +1,208 @@
+
+.three_screen{
+    margin-top: 120px;
+    width: 1308px;
+    height: 900px;
+}
+
+.header_three_screen{
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+.border_bottom{
+    margin-top: 10px;
+    border-bottom: 2px solid #FBBB43;
+    width: 300px;
+}
+
+
+.slider_box_container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.card_images_container{
+    width: 1129px;
+    height: 800px;
+/*    top: -490px;
+    left: 350px;*/
+}
+
+
+
+.card { position: relative; height: 401px}
+.c4 { width: 571px; left: 550px; top: 100px; z-index: 1;}
+.c3 { width: 571px; left: 390px; top: -220px; z-index: 2}
+.c2 { width: 571px; left: 190px; top: -540px; z-index: 3;}
+.c1 { width: 571px; left: 0;top: -860px; z-index: 4; }
+/*.c4 { margin-left: 171px; margin-top: 0; z-index: 1;}
+.c3 { margin-left: 50px; margin-top: -300px; z-index: 2}
+.c2 { margin-left: -120px; margin-top: -350px; z-index: 3;}
+.c1 { margin-left: -225px; margin-top: -300px; z-index: 4; }*/
+.card:hover {
+    z-index: 10;
+}
+.sale{
+    height: 30px;
+}
+.box_name_card_sale{
+    color: #FFFFFF;
+    position: relative;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+
+.name_card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.card_sale{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.card_discounts{
+    background: #FBBB43;
+    border-radius: 15px;
+    color: #141111;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+.card{
+    cursor: pointer;
+}
+
+.black_op{
+    opacity: 0;
+    height: 400px;
+    transition: opacity .3s;
+    background: #000000;
+    position: relative;
+    width: 570px; left: 0; top: -406px; z-index: 1;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.c4:hover .black_op {
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+.c3:hover .black_op {
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+.c2:hover .black_op {
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+.c1:hover .black_op {
+    opacity: 0.5;
+    transition: opacity .3s;
+    margin-top: 20px;
+}
+
+.button_card {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 150px;
+    left: calc(50% - 100px);
+    color:#000000;
+    transition: opacity .3s;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #FBBB43;
+    border: none;
+}
+.button_card:hover{
+    background: #FFFFFF;
+}
+
+.c4:hover .button_card {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c3:hover .button_card {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c2:hover .button_card {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c1:hover .button_card {
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+
+
+.button_favorites_card{
+    background-image: url("../css/images/favorites_mini_close.png");
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    top: 25px;
+    left: 520px;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+.button_favorites_card:hover{
+    background-image: url("../css/images/favorites_yellow.png");
+}
+
+.c1:hover .button_favorites_card{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c2:hover .button_favorites_card{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c3:hover .button_favorites_card{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
+.c4:hover .button_favorites_card{
+    opacity: 1;
+    transition: opacity .3s;
+    z-index: 2;
+}
